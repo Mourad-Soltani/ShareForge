@@ -1,0 +1,82 @@
+/* ShareForge styles. Built by Mourad.Soltani */
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --accent: #38bdf8;
+  --accent2: #818cf8;
+  --border: #334155;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+header, footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+header h1 { margin: 0; color: var(--accent); }
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.editor label { display: block; margin-top: 0.8rem; font-size: 0.9rem; }
+.editor input, .editor textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.25rem;
+  background: #0b1220;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+}
+button {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { opacity: 0.9; }
+.cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+.card {
+  width: 320px;
+  background: #fff;
+  color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.card-image {
+  height: 160px;
+  background: #e2e8f0 center/cover no-repeat;
+}
+.card-body { padding: 0.75rem; }
+.card-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
+.card-desc { font-size: 0.8rem; color: #444; }
+.card-domain { font-size: 0.7rem; color: #666; margin-top: 0.3rem; }
+pre {
+  background: #0b1220;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+@media (max-width: 700px) {
+  .card { width: 100%; }
+}

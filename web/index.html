@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShareForge — Social Meta & Preview Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShareForge</h1>
+    <p>Design perfect Open Graph & social link cards. Built by Mourad.Soltani</p>
+  </header>
+
+  <main>
+    <section class="editor">
+      <label>Title <span id="title-count">0</span>/60</label>
+      <input id="title" type="text" placeholder="Your compelling title" maxlength="120">
+
+      <label>Description <span id="desc-count">0</span>/160</label>
+      <textarea id="description" rows="3" placeholder="Short description that appears in previews"></textarea>
+
+      <label>Image URL</label>
+      <input id="image" type="url" placeholder="https://example.com/og-image.png">
+
+      <label>Site / Brand Name</label>
+      <input id="site" type="text" placeholder="ShareForge">
+
+      <label>Canonical URL</label>
+      <input id="url" type="url" placeholder="https://yoursite.com/page">
+
+      <button id="generate">Generate Meta Tags</button>
+      <button id="copy">Copy Tags</button>
+    </section>
+
+    <section class="previews">
+      <h2>Live Previews</h2>
+      <div class="cards">
+        <div class="card twitter" id="twitter-card">
+          <div class="card-image"></div>
+          <div class="card-body">
+            <div class="card-title"></div>
+            <div class="card-desc"></div>
+            <div class="card-domain">example.com</div>
+          </div>
+        </div>
+        <div class="card linkedin" id="linkedin-card">
+          <div class="card-image"></div>
+          <div class="card-body">
+            <div class="card-title"></div>
+            <div class="card-desc"></div>
+            <div class="card-domain">example.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="output">
+      <h2>Generated HTML Meta Tags</h2>
+      <pre id="output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    ShareForge v1.0 — Built by Mourad.Soltani
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
